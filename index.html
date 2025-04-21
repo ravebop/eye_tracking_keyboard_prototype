@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eye-Tracking Keyboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://webgazer.cs.brown.edu/webgazer.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-landmarks-detection"></script>
+</head>
+<body>
+  <div class="app-container">
+    <div class="suggestion-bar" id="suggestions"></div>
+    <div class="keyboard" id="keyboard"></div>
+    <div class="controls">
+      <button id="space">Space</button>
+      <button id="clear">Clear</button>
+      <button id="settings">⚙️</button>
+    </div>
+    <div class="output" id="output"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
